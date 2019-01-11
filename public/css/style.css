@@ -2,3 +2,14 @@
   margin-top: 12%;
   border-radius: 20px;
 }
+
+#formInnerWrapper{
+  background-color: limegreen;
+}
+
+#signUpLink{
+  background-color: green;
+}
+#signUpForm{
+  display: none;
+}

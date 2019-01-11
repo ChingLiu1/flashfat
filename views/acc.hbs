@@ -14,16 +14,16 @@
   <body>
 
             <div id="formWrapper" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-                <div class="pt-2 pb-2 pl-4 pr-4 bg-success">
-                    <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item">
-                          <a href="" class="nav-link text-white">LogIn</a>
+                <div class="pt-2 pb-2 pl-4 pr-4" id="formInnerWrapper">
+                    <ul class="nav nav-pills nav-fill pt-3">
+                        <li class="nav-item" id="logInLink">
+                          <a href="#" class="nav-link text-white">LogIn</a>
                         </li>
-                        <li class="nav-item">
-                          <a href="" class="nav-link text-white">SignUp</a>
+                        <li class="nav-item" id="signUpLink">
+                          <a href="#" class="nav-link text-white">SignUp</a>
                         </li>
                     </ul>
-                    <form class="pt-3">
+                    <form class="pt-3" id="logInForm">
                         <div class="form-group">
                             <label class="text-white">username</label>
                             <input type="text" placeholder="username" class="form-control px-1 py-1" required>
@@ -37,7 +37,43 @@
                             <a href="#" class="text-white">Forgot password</a>
                         </div>
                     </form>
+
+                    <form class="pt-3" id="signUpForm">
+                        <div class="form-group">
+                            <label class="text-white">username</label>
+                            <input type="text" placeholder="username" class="form-control px-1 py-1" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-white">Email</label>
+                            <input type="password" placeholder="your Email" class="form-control px-1 py-1" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-white">password</label>
+                            <input type="password" placeholder="your password" class="form-control px-1 py-1" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-6">
+                                <label class="text-white">Gender</label>
+                                <select class="form-control">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-6">
+                                <label class="text-white">Weight</label>
+                                <input type="text" class="form-control" min="2" max="3" placeholder="in pounds" required>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                                <label class="text-white">Age</label>
+                                <input type="text" class="form-control" placeholder="your age" max='2' min='2' required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-primary">Sign Up</button>
+                        </div>
+                    </form>
                 </div>
+                <br/>
             </div>
 
     <!-- Optional JavaScript -->
@@ -45,5 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/scripts/scripts.js"></script>
   </body>
 </html>
